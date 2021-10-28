@@ -1,0 +1,484 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://yingying-zhang.github.io/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://yingying-zhang.github.io/">
+    <Prefix name="" IRI="https://yingying-zhang.github.io/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="Energy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="FeatureOfInterest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Observation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Spatial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="UnitOfMeasure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="beo:Area"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="beo:Building"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="beo:Command"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="beo:Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="beo:Element"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="beo:Function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="beo:Input"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="beo:Issue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="beo:Measurement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="beo:Output"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="beo:Plan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="beo:Price"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="beo:Procedure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="beo:Property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="beo:Regulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="beo:Result"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="beo:Sample"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="beo:Sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="beo:Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="beo:Site"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="beo:Space"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="beo:State"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="beo:Storey"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="beo:Task"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="beo:TimeSeriesData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="beo:Unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="beo:Zone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="beo:3DModel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="EnergyObjectProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="InformationObjectproperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="ObservationObjectPropertz"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="SpatialObjectProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="accomplishes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasBuilding"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasData"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasElement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasFile"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasInput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasOutput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasResult"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSample"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSpace"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasStorey"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isAccomplishedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isObservedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isPropertyOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isResultOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isSampleOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="madeBySensor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="observes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="phenomenonTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="has3DModel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasGUID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasValue"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="FeatureOfInterest"/>
+        <Class IRI="Observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="UnitOfMeasure"/>
+        <Class IRI="Observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="beo:Area"/>
+        <Class IRI="Spatial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="beo:Building"/>
+        <Class IRI="Spatial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="beo:Command"/>
+        <Class IRI="Energy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="beo:Device"/>
+        <Class IRI="Energy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="beo:Element"/>
+        <Class IRI="Spatial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="beo:Function"/>
+        <Class IRI="Energy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="beo:Input"/>
+        <Class IRI="Observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="beo:Issue"/>
+        <Class IRI="Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="beo:Measurement"/>
+        <Class IRI="Observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="beo:Output"/>
+        <Class IRI="Observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="beo:Plan"/>
+        <Class IRI="Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="beo:Price"/>
+        <Class IRI="Energy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="beo:Procedure"/>
+        <Class IRI="Observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="beo:Property"/>
+        <Class IRI="Observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="beo:Regulation"/>
+        <Class IRI="Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="beo:Result"/>
+        <Class IRI="Observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="beo:Sample"/>
+        <Class IRI="Observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="beo:Sensor"/>
+        <Class IRI="Observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="beo:Service"/>
+        <Class IRI="Energy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="beo:Site"/>
+        <Class IRI="Spatial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="beo:Space"/>
+        <Class IRI="Spatial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="beo:State"/>
+        <Class IRI="Energy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="beo:Storey"/>
+        <Class IRI="Spatial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="beo:Task"/>
+        <Class IRI="Energy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="beo:TimeSeriesData"/>
+        <Class IRI="Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="beo:Unit"/>
+        <Class IRI="Energy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="beo:Zone"/>
+        <Class IRI="Spatial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="beo:3DModel"/>
+        <Class IRI="Information"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="accomplishes"/>
+        <ObjectProperty IRI="EnergyObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasBuilding"/>
+        <ObjectProperty IRI="SpatialObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasData"/>
+        <ObjectProperty IRI="InformationObjectproperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasElement"/>
+        <ObjectProperty IRI="SpatialObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasFile"/>
+        <ObjectProperty IRI="InformationObjectproperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasInput"/>
+        <ObjectProperty IRI="ObservationObjectPropertz"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasOutput"/>
+        <ObjectProperty IRI="ObservationObjectPropertz"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasResult"/>
+        <ObjectProperty IRI="ObservationObjectPropertz"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasSample"/>
+        <ObjectProperty IRI="ObservationObjectPropertz"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasSpace"/>
+        <ObjectProperty IRI="SpatialObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasStorey"/>
+        <ObjectProperty IRI="SpatialObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isAccomplishedBy"/>
+        <ObjectProperty IRI="EnergyObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isObservedBy"/>
+        <ObjectProperty IRI="ObservationObjectPropertz"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isPropertyOf"/>
+        <ObjectProperty IRI="ObservationObjectPropertz"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isResultOf"/>
+        <ObjectProperty IRI="ObservationObjectPropertz"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isSampleOf"/>
+        <ObjectProperty IRI="ObservationObjectPropertz"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="madeBySensor"/>
+        <ObjectProperty IRI="ObservationObjectPropertz"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="observes"/>
+        <ObjectProperty IRI="ObservationObjectPropertz"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="phenomenonTime"/>
+        <ObjectProperty IRI="EnergyObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="accomplishes"/>
+        <ObjectProperty IRI="isAccomplishedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasSample"/>
+        <ObjectProperty IRI="isSampleOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isObservedBy"/>
+        <ObjectProperty IRI="observes"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="accomplishes"/>
+        <Class IRI="beo:Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasBuilding"/>
+        <Class IRI="beo:Zone"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasElement"/>
+        <Class IRI="beo:Zone"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSpace"/>
+        <Class IRI="beo:Zone"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasStorey"/>
+        <Class IRI="beo:Zone"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isAccomplishedBy"/>
+        <Class IRI="beo:Task"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isObservedBy"/>
+        <Class IRI="beo:Property"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="madeBySensor"/>
+        <Class IRI="beo:Measurement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="observes"/>
+        <Class IRI="beo:Sensor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="accomplishes"/>
+        <Class IRI="beo:Task"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasBuilding"/>
+        <Class IRI="beo:Building"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasElement"/>
+        <Class IRI="beo:Element"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSample"/>
+        <Class IRI="beo:Sample"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSpace"/>
+        <Class IRI="beo:Space"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasStorey"/>
+        <Class IRI="beo:Storey"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isAccomplishedBy"/>
+        <Class IRI="beo:Device"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isObservedBy"/>
+        <Class IRI="beo:Sensor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="madeBySensor"/>
+        <Class IRI="beo:Sensor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="observes"/>
+        <Class IRI="beo:Property"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
